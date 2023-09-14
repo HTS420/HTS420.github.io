@@ -1,0 +1,7 @@
+\beamer@sectionintoc {1}{Introduction}{2}{0}{1}
+\beamer@sectionintoc {2}{Impact of dominant currency on trade}{2}{0}{2}
+\beamer@subsectionintoc {2}{1}{Trade Volume Elasticity}{2}{0}{2}
+\beamer@subsectionintoc {2}{2}{Effect of US Dollar on Rest-of-World Trade and Inflation}{8}{0}{2}
+\beamer@subsectionintoc {2}{3}{Calibration with Colombian Firm-level Data}{11}{0}{2}
+\beamer@sectionintoc {3}{Counter-evidence against DCP}{15}{0}{3}
+\beamer@sectionintoc {4}{Closing Comments}{19}{0}{4}
