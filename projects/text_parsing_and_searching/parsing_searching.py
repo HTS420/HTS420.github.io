@@ -1,9 +1,3 @@
-"""
-File: searchengine.py
----------------------
-You fill in this comment
-"""
-
 
 import os
 import sys
