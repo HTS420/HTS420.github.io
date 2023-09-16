@@ -3,7 +3,7 @@ import sys
 
 def pr_report(file_name):
 
-    # 從MacOS介面抓下來的資料，固定第11行是header （zero indexing）
+    # The header is fixed at row 11 when downloading from Mac(zero indexing）
     df = pd.read_csv (file_name, header = 11)
 
     # Remove duplicates Form ID
@@ -25,14 +25,10 @@ def pr_report(file_name):
     df = df[cc_filter]
 
     df = df[df['PR Status'].str.contains('OptVPApproved|BuyerApproved|BuyerFinalCompleted|GroupGMAApproved|GroupVPApproved|Submitted|OptHeadApproved|CMHeadApproved|CMApproved|FICompleted')]
-    #
-    # for i in range(len(status_filter)):
-    #     PR_Status_filter = df['PR Status'] == status_filter[i]
-    #     df = df[PR_Status_filter]
 
     # convert PR Amount to int
 
-    df['PR Amount'] = df['PR Amount'].apply(lambda x: float(x.split()[0].replace(',', ''))) # 先去掉千號符，才能轉float
+    df['PR Amount'] = df['PR Amount'].apply(lambda x: float(x.split()[0].replace(',', ''))) # remove dollar sign to transform into float
     df['PR Amount'] = df['PR Amount'].astype(float)
 
 
@@ -43,7 +39,6 @@ def pr_report(file_name):
 
     print(df)
     print(result)
-    # 等等來用excel驗算
 
 def main():
     """
